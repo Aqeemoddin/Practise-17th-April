@@ -20,6 +20,12 @@ public class BookControler {
 	
 	int x=10;
 	
+	
+	
+	
+	// changes for bug 121
+	String job="DM";
+	
 	@GetMapping("/allbooks")
 	public List<BookEntity> getBooks()
 	{
