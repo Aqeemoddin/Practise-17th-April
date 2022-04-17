@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.API1.dao.BookDao;
@@ -22,9 +23,13 @@ public class BookControler {
 	
 	
 	
+	//bug 101
+	String j1="Jobn1";
+	
+	
 	
 	// changes for bug 121
-	String job="DM";
+	String job="DM"; 
 	
 	@GetMapping("/allbooks")
 	public List<BookEntity> getBooks()
@@ -49,6 +54,12 @@ public class BookControler {
 		return b; 
 	}
 	
+	@RequestMapping("/")
+	public String view2()
+	{
+		
+		return "java";
+	}
 	
 	
 	
