@@ -60,6 +60,13 @@ public class BookControler {
 		
 		return "java";
 	}
+	//121 bug
+	@RequestMapping("/")
+	public String view22()
+	{
+		
+		return "net";
+	}
 	
 	
 	
