@@ -57,7 +57,8 @@ public class BookControler {
 	@RequestMapping("/")
 	public String view2()
 	{
-		
+		//bug 101
+		String n1="Java";
 		return "java";
 	}
 	//121 bug
